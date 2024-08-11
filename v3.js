@@ -1,0 +1,1 @@
+var i = 0; require("http").createServer((req, res) => req.url == "/decrease" ? res.end(--i) : (req.url == "/increase" ? res.end(++i) : (res.end("social counter/n navigate to '/increase' or '/decrease' to make actions/n current counter:" + i)) )).listen(80)
